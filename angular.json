@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/shop-ease",
+            "outputPath": "docs",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -34,8 +34,7 @@
               "node_modules/@fortawesome/fontawesome-free/scss/solid.scss",
               "node_modules/@fortawesome/fontawesome-free/scss/regular.scss",
               "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss",
-              "node_modules/@fortawesome/fontawesome-free/scss/brands.scss",
-              "node_modules/bootstrap-4-grid/scss/grid/_grid.scss"
+              "node_modules/@fortawesome/fontawesome-free/scss/brands.scss"
             ],
             "scripts": []
           },
