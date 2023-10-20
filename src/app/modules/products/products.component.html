@@ -1,0 +1,38 @@
+<div class="content">
+
+    <!-- Products -->
+    <h2>Products</h2>
+
+    <input type="search" (input)="searchTextChanged($event)"/>
+
+    <label for="category"> Category </label>
+    <select name="categoryType" id="category" 
+            #category (change)="onSelected(category.value)">
+      <option default value="all">All</option>
+      <option value="books">Book</option>
+      <option value="clothing">Clothing</option>
+      <option value="electronics">Electronics</option>
+    </select>
+
+    <div class="container">
+        <div class="row">
+            <div *ngFor="let product of displayProductList" 
+                class="product-card col-lg-4 col-sm-1">
+                <div>
+                  <div class="product-image">
+                    <!-- <img width="80" [src]="product.imagePath" /> -->
+                  </div>
+                  <div>
+                    <h3>{{product.name}}</h3>
+                    <span>{{product.price}}</span>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-secondary">
+                        Checkout</button>
+                  </div>         
+                </div>
+            </div>
+        </div>
+    </div>
+
+  </div>
